@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class PokemonCard extends Component {
   constructor(props) {
@@ -23,16 +24,16 @@ export default class PokemonCard extends Component {
   render() {
     return (
       <div className="card col-md-3 col-sm-6 mb-5">
-        <a href="pokemon\1">
+        <Link to={`/pokemon/${this.state.id}`}>
           <img
             className="card-img-top rounded mx-auto d-block mt-2"
             src={this.state.imageUrl}
             style={{ width: "5em", height: "5em" }}
           ></img>
           <h5 className="card-header">
-            {this.state.id}. {this.state.name}
+            #{this.state.id}. {this.state.name}
           </h5>
-        </a>
+        </Link>
       </div>
     );
   }

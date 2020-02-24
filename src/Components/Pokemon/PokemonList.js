@@ -7,7 +7,7 @@ export default class PokemonList extends Component {
     super(props);
     this.state = {
       //call only the first 151 Pokemon - 1st gen Pokemon
-      url: "https://pokeapi.co/api/v2/pokemon/?limit=151",
+      url: "https://pokeapi.co/api/v2/pokemon/?limit=40",
       pokemonList: null,
       cards: null
     };
@@ -19,15 +19,17 @@ export default class PokemonList extends Component {
     this.setState({
       pokemonList: res.data["results"]
     });
-
+    let id = 1
     const cards = this.state.pokemonList.map(pokemon => {
-      return <PokemonCard name={pokemon.name} />;
+      return <PokemonCard name={pokemon.name} 
+      url={pokemon.url}
+      id={id++}/>;
     });
 
     this.setState({ cards });
   }
 
   render() {
-    return <div className="pokelist-container">{this.state.cards}</div>;
+    return <div className="pokelist-container row">{this.state.cards}</div>;
   }
 }

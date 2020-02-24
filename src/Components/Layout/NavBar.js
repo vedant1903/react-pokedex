@@ -5,18 +5,11 @@ export default class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar bg="dark">
+        <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="#home">
-            <img
-              src="/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
+            Pokedex
           </Navbar.Brand>
         </Navbar>
-        <h3>Vedant Deokar</h3>
       </div>
     );
   }

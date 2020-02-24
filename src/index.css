@@ -12,12 +12,20 @@ code {
     monospace;
 }
 
-.pokelist-container {
-  border: 1px solid red;
+.card{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.card-img {
+  width: 5em;
+  height: 5em;
 }
 
-.pokemon-card {
-  background-color: thistle;
-  width: 500px;
-  height: auto;
+.row {
+  margin-right: 50px !important;
+  margin-left: 50px !important;
+}
+
+.card-img-top {
+  width: 5em;
 }

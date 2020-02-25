@@ -12,20 +12,42 @@ code {
     monospace;
 }
 
-.card{
-  padding-right: 10px;
-  padding-left: 10px;
+.inner-container {
+  padding-top: 20px;
 }
+
+.pokecard {
+  padding: 0px !important;
+  margin: 1px !important;
+}
+
 .card-img {
   width: 5em;
   height: 5em;
 }
 
-.row {
-  margin-right: 50px !important;
-  margin-left: 50px !important;
+.pokelist-container {
+  padding: 20px;
 }
 
 .card-img-top {
   width: 5em;
+}
+
+.abil-span {
+  margin: 2px;
+}
+
+.physical span {
+  margin: 3px;
+}
+
+.bottomnav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Details page*/
+.badge {
+  margin: 3px;
 }

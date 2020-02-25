@@ -30,6 +30,11 @@ export default class PokemonList extends Component {
   }
 
   render() {
-    return <div className="pokelist-container row">{this.state.cards}</div>;
+    return (
+      <div className="container-md">
+        <div className="pokelist-container row">{this.state.cards}</div>
+      </div>
+      
+    )
   }
 }
